@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="YJTabLayout">
+        <attr name="yj_tabIndicatorColor" format="color" />
+        <attr name="yj_tabIndicatorHeight" format="dimension" />
+        <attr name="yj_tabContentStart" format="dimension" />
+        <attr name="yj_tabBackground" format="reference" />
+        <attr name="yj_tabIndicatorDrawable" format="reference" />
+        <attr name="yj_tabIndicatorDrawableHeight" format="dimension" />
+        <attr name="yj_tabIndicatorPaddingBottom" format="dimension" />
+        <attr name="yj_tabIndicatorPaddingTop" format="dimension" />
+        <attr name="yj_tabIndicatorPaddingLeft" format="dimension" />
+        <attr name="yj_tabIndicatorPaddingRight" format="dimension" />
+
+        <attr name="yj_tabMode">
+            <enum name="scrollable" value="0" />
+            <enum name="fixed" value="1" />
+        </attr>
+        <attr name="yj_tabGravity">
+            <enum name="fill" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+        <attr name="yj_tabMinWidth" format="dimension" />
+        <attr name="yj_tabMaxWidth" format="dimension" />
+        <attr name="yj_tabTextAppearance" format="reference" />
+        <attr name="yj_tabTextColor" format="color" />
+        <attr name="yj_tabSelectedTextColor" format="color" />
+        <attr name="yj_tabPaddingStart" format="dimension" />
+        <attr name="yj_tabPaddingTop" format="dimension" />
+        <attr name="yj_tabPaddingEnd" format="dimension" />
+        <attr name="yj_tabPaddingBottom" format="dimension" />
+        <attr name="yj_tabPadding" format="dimension" />
+    </declare-styleable>
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+        <item name="yj_tabMaxWidth">@dimen/design_tab_max_width</item>
+        <item name="yj_tabIndicatorColor">?attr/colorAccent</item>
+        <item name="yj_tabIndicatorHeight">2dp</item>
+        <item name="yj_tabPaddingStart">12dp</item>
+        <item name="yj_tabPaddingEnd">12dp</item>
+        <item name="yj_tabBackground">?attr/selectableItemBackground</item>
+        <item name="yj_tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <item name="yj_tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="yj_tabGravity">fill</item>
+        <item name="yj_tabMode">fixed</item>
+    </style>
+</resources>
